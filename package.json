@@ -1,7 +1,7 @@
 {
   "name": "quiet-pages-v2",
   "version": "4.0.0",
-  "description": "Quiet Pages \u2014 accessible full-stack journaling platform",
+  "description": "Quiet Pages — accessible full-stack journaling platform",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -9,8 +9,9 @@
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "better-sqlite3": "^11.7.0",
+    "dotenv": "^17.4.2",
     "express": "^4.21.2",
-    "jsonwebtoken": "^9.0.2"
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.23.0"
   }
 }
