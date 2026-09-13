@@ -884,15 +884,14 @@ app.get("/api/admin/analytics", auth, admin, async (req, res) => {
     ORDER BY count DESC
   `);
 
-  const trend = await query(`
-    SELECT TO_CHAR(created_at,'YYYY-MM-DD') day,
-           COUNT(*)::int count
+const trend = await query(`
+    SELECT TO_CHAR(created_at, 'YYYY-MM-DD') AS "day",
+           COUNT(*)::int AS count
     FROM diaries
-    GROUP BY day
-    ORDER BY day DESC
+    GROUP BY TO_CHAR(created_at, 'YYYY-MM-DD')
+    ORDER BY TO_CHAR(created_at, 'YYYY-MM-DD') DESC
     LIMIT 14
-  `);
-
+`);
   res.json({
     moods: moods.rows,
     categories: categories.rows,
