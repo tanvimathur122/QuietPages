@@ -723,6 +723,7 @@ function openWrite(mode="free",id=null,data=null){
 
   },100);
 
+
 }
 
 
@@ -2828,7 +2829,7 @@ async function deletePrompt(id){
 const petConfig={
 
   dog:{
-    name:"Milo",
+    name:"Zeus",
     label:"loyal & warm",
     image:"/pets/dog.png.jfif"
   },
@@ -3412,7 +3413,7 @@ function showPetIntroduction(){
         <img
           class="pet-intro-image"
           src="${pet.image}"
-          alt="Quiet Pages companion"
+          alt="${pet.name}, Quiet Pages companion"
           onerror="
             this.style.opacity='.2'
           ">
@@ -3420,7 +3421,7 @@ function showPetIntroduction(){
       </div>
 
       <h2>
-        Hi, I'm your writing companion. ♡
+        Hi, I'm ${pet.name}. ♡
       </h2>
 
       <p>
@@ -3492,7 +3493,7 @@ function continueWithoutChoosingPet(){
   closeModal();
 
   petSay(
-    "I'll be right here whenever you're ready."
+    `I'll be right here whenever you're ready.`
   );
 
 }
@@ -3920,6 +3921,11 @@ function showWritingCompanion(message=""){
 
   img.alt=
     `${p.name}, your Quiet Pages writing companion`;
+
+  const writingName=$("petWritingName");
+
+  if(writingName)
+    writingName.textContent=p.name;
 
   const card=
     modal?.querySelector(".modal-card");
