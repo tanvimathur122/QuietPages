@@ -7276,32 +7276,3 @@ html[data-theme="dark"] .navbar nav > .nav-btn:hover{
   }
 }
 
-/* =========================
-   SMALL PHONES
-   ========================= */
-
-@media (max-width:390px){
-
-  .navbar{
-    width:calc(100% - 12px);
-    padding:7px 7px;
-  }
-
-  .navbar nav{
-    gap:3px;
-  }
-
-  .navbar nav > a,
-  .navbar nav > .nav-btn,
-  .navbar #settingsBtn,
-  .navbar #authBtn{
-    height:34px;
-    font-size:9.5px;
-    border-radius:8px;
-  }
-
-  .navbar #settingsBtn{
-    font-size:13px;
-  }
-
-}
