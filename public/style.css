@@ -5760,3 +5760,351 @@ img{
     font-size: 9px;
   }
 }
+/* =========================================================
+   QUIET PAGES — MOBILE FRIENDLY OVERRIDES
+   ========================================================= */
+
+@media (max-width: 700px) {
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  .navbar {
+    width: 100% !important;
+    min-height: auto !important;
+    padding: 12px 14px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 10px !important;
+    overflow: visible !important;
+  }
+
+  .navbar .brand {
+    width: 100% !important;
+    justify-content: center;
+    font-size: 25px !important;
+    white-space: nowrap;
+    overflow: visible;
+  }
+
+  .navbar > nav {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 6px !important;
+    margin: 0 !important;
+    align-items: center;
+  }
+
+  .navbar > nav > a,
+  .navbar > nav > button,
+  .navbar .nav-btn {
+    width: 100%;
+    min-width: 0;
+    padding: 8px 4px !important;
+    font-size: 10px !important;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  #petsLink {
+    display: none !important;
+  }
+
+  main {
+    width: calc(100% - 28px) !important;
+    max-width: 100% !important;
+    margin: 0 auto;
+  }
+
+  .hero {
+    min-height: 0 !important;
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+    padding: 42px 0 55px !important;
+  }
+
+  .hero-copy {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: clamp(42px, 12vw, 58px) !important;
+    line-height: .98 !important;
+    overflow-wrap: break-word;
+  }
+
+  h2 {
+    font-size: clamp(34px, 10vw, 45px) !important;
+    line-height: 1.05;
+  }
+
+  h3 {
+    font-size: 24px !important;
+  }
+
+  .hero-description {
+    max-width: 100%;
+    font-size: 14px !important;
+    line-height: 1.7;
+  }
+
+  .hero-actions {
+    width: 100%;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 12px !important;
+  }
+
+  .hero-actions .primary-btn,
+  .hero-actions .text-link {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-soft-note {
+    align-items: flex-start;
+    line-height: 1.5;
+  }
+
+  .hero-visual {
+    width: 100%;
+    min-height: 330px !important;
+    overflow: hidden;
+  }
+
+  .journal-card {
+    width: min(285px, 82vw) !important;
+    min-height: 325px !important;
+    padding: 22px !important;
+  }
+
+  .orbit-one {
+    width: min(320px, 95vw) !important;
+  }
+
+  .orbit-two {
+    width: min(270px, 82vw) !important;
+  }
+
+  .quick-start {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  .quick-start button {
+    width: 100%;
+    min-height: 105px !important;
+  }
+
+  .section-heading {
+    width: 100%;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 16px !important;
+  }
+
+  .section-heading h2 {
+    font-size: clamp(34px, 10vw, 45px) !important;
+  }
+
+  .search-area,
+  .search-wrap,
+  .search-wrap input {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .search-wrap {
+    display: flex;
+  }
+
+  .search-wrap input {
+    min-width: 0;
+  }
+
+  .filters {
+    width: 100%;
+    flex-direction: column !important;
+    gap: 8px;
+  }
+
+  .filters select {
+    width: 100% !important;
+  }
+
+  .cards,
+  .my-list,
+  .admin-grid,
+  .admin-panels,
+  .stats-row {
+    grid-template-columns: 1fr !important;
+  }
+
+  .story-card,
+  .my-card,
+  .card,
+  .admin-panel,
+  .stat-card {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .privacy-strip {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 10px;
+  }
+
+  footer {
+    width: calc(100% - 28px) !important;
+    margin: 0 auto;
+  }
+
+  .modal {
+    padding: 10px !important;
+    align-items: center;
+  }
+
+  .modal-card,
+  #modal.writing-modal .modal-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    max-height: calc(100dvh - 20px);
+    overflow-y: auto;
+    padding: 22px 16px !important;
+    border-radius: 20px !important;
+  }
+
+  .modal-card h2 {
+    font-size: 34px !important;
+  }
+
+  .form input,
+  .form textarea,
+  .form select,
+  .form button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .form textarea,
+  #modal.writing-modal #diaryBody {
+    min-height: 180px !important;
+    font-size: 16px !important;
+  }
+
+  .write-modes,
+  .mood-picker {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .write-modes button,
+  .mood {
+    flex: 1 1 auto;
+  }
+
+  .setting {
+    width: 100%;
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .setting select {
+    width: 100% !important;
+  }
+
+  .pet-dock {
+    right: 10px !important;
+    bottom: 10px !important;
+    width: min(320px, calc(100vw - 20px)) !important;
+    max-width: calc(100vw - 20px);
+  }
+
+  #petWritingCompanion:not(.hidden) {
+    max-width: calc(100vw - 24px);
+  }
+}
+
+@media (max-width: 420px) {
+  .navbar .brand {
+    font-size: 22px !important;
+  }
+
+  .navbar > nav {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .navbar > nav > a,
+  .navbar > nav > button,
+  .navbar .nav-btn {
+    font-size: 9px !important;
+    padding: 7px 3px !important;
+  }
+
+  main {
+    width: calc(100% - 20px) !important;
+  }
+
+  h1 {
+    font-size: clamp(38px, 12vw, 50px) !important;
+  }
+
+  .hero {
+    padding-top: 32px !important;
+  }
+
+  .hero-visual {
+    min-height: 285px !important;
+  }
+
+  .journal-card {
+    width: min(245px, 80vw) !important;
+    min-height: 285px !important;
+  }
+
+  .journal-q {
+    font-size: 105px !important;
+  }
+
+  .modal {
+    padding: 6px !important;
+  }
+
+  .modal-card,
+  #modal.writing-modal .modal-card {
+    padding: 20px 13px !important;
+  }
+}
+
+@media (max-width: 340px) {
+  .navbar > nav > a,
+  .navbar > nav > button,
+  .navbar .nav-btn {
+    font-size: 8px !important;
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+  }
+
+  .hero-visual {
+    min-height: 255px !important;
+  }
+
+  .journal-card {
+    width: 220px !important;
+    min-height: 265px !important;
+  }
+}
