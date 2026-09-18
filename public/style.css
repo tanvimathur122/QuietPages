@@ -7145,3 +7145,67 @@ html[data-theme="dark"] .navbar nav > .nav-btn:hover{
     padding:0 9px;
   }
 }
+@media (max-width: 700px){
+
+  .navbar{
+    width:calc(100% - 24px);
+    min-height:58px;
+    margin:10px auto 0;
+    padding:8px 10px;
+    border-radius:17px;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+
+  .navbar .brand{
+    gap:8px;
+  }
+
+  .navbar .brand-mark{
+    width:32px;
+    height:32px;
+    font-size:22px;
+    border-radius:9px;
+  }
+
+  .navbar .brand > span:last-child{
+    font-size:19px;
+  }
+
+  .navbar nav{
+    width:100%;
+    margin:0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:4px;
+    overflow:hidden;
+  }
+
+  .navbar nav > a,
+  .navbar nav > .nav-btn{
+    height:36px;
+    padding:0 8px;
+    font-size:11px;
+    border-radius:9px;
+    flex:1;
+  }
+
+  .navbar #settingsBtn{
+    flex:0 0 36px;
+    width:36px;
+    padding:0;
+  }
+
+  .navbar #authBtn{
+    min-width:0;
+    flex:1.15;
+    padding:0 10px;
+  }
+
+  .navbar nav > a:hover,
+  .navbar nav > .nav-btn:hover{
+    background:rgba(143,117,137,.08);
+  }
+
+}
