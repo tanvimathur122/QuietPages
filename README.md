@@ -1,8 +1,6 @@
 # Quiet Pages
 
 A calm, accessible full-stack journaling platform for honest thoughts.
-
-## Phase 4
 - Pen names and profile bio
 - Edit and delete journal pages
 - Drafts
